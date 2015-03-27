@@ -7,11 +7,24 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SOFraction.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        
+        SOFraction *fract = [[SOFraction alloc] init];
+        fract.numerator = 2;
+        fract.denominator = 1;
+        
+        SOFraction *fractt = [[SOFraction alloc] init];
+        fractt.numerator = 2;
+        fractt.denominator = 3;
+        
+        SOFraction *result = [[SOFraction alloc] init];
+        result = [fractt multiply:fract];
+        
+        NSLog(@"%@", result.description);
+        
     }
     return 0;
 }
