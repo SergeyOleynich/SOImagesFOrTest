@@ -16,6 +16,7 @@ int main(int argc, const char * argv[]) {
         fract.numerator = 2;
         fract.denominator = 1;
         
+        
         SOFraction *fractt = [[SOFraction alloc] init];
         fractt.numerator = 2;
         fractt.denominator = 3;
